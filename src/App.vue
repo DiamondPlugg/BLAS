@@ -123,9 +123,7 @@ onUnmounted(function () {
     </header>
 
     <main>
-      <main>
-        <router-view :halls="halls" @refresh-halls="updateHalls" />
-      </main>
+      <router-view :halls="halls" @refresh-halls="updateHalls" />
     </main>
 
     <footer class="footer">
