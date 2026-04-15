@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'; // 1. Заменили импорт
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import Account from '../views/Account.vue';
 import Admin from '../views/Admin.vue';
@@ -24,9 +24,9 @@ const routes = [
 ];
 
 const router = createRouter({
-  // 2. Заменили createWebHistory() на createWebHashHistory()
-  // Теперь в URL появится #, но деплой на GitPages будет работать стабильно
-  history: createWebHashHistory(),
+  // ВАЖНО: Добавили import.meta.env.BASE_URL внутрь скобок.
+  // Это подтянет твой '/BLAS/' из vite.config.js, и роутер поймет, где искать страницы.
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior: function (to, from, savedPosition) {
     if (savedPosition) {
