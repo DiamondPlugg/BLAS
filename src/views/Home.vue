@@ -87,7 +87,7 @@ const sortedHalls = computed(() => {
                 </router-link>
             </div>
             <div class="cert-image-container">
-                <img class="cert-image-placeholder" src="hero_sertificate.jpg" alt="Сертификат" />
+                <img class="cert-image-placeholder" src="/hero_sertificate.jpg" alt="Сертификат" />
             </div>
         </section>
 

@@ -140,21 +140,21 @@ watch(() => tempUser.value?.email, () => { delete errors.value.email });
             <div class="profile-card">
                 <div class="card-controls">
                     <button v-if="!isEditing" class="control-btn" @click="startEditing" title="Редактировать">
-                        <img src="edit.png">
+                        <img src="/edit.png">
                     </button>
                     <button class="control-btn" @click="doLogout" title="Выйти">
-                        <img src="exit.png">
+                        <img src="/exit.png">
                     </button>
                     <button class="control-btn" @click="confirmDelete" title="Удалить аккаунт">
-                        <img src="delete.png">
+                        <img src="/delete.png">
                     </button>
                 </div>
 
                 <div class="avatar-section">
                     <div class="avatar-circle">
-                        <img v-if="tempUser.avatar === 'cat'" src="cat.png">
-                        <img v-else-if="tempUser.avatar === 'mouse'" src="mouse.png">
-                        <img v-else src="avatar_none.png">
+                        <img v-if="tempUser.avatar === 'cat'" src="/cat.png">
+                        <img v-else-if="tempUser.avatar === 'mouse'" src="/mouse.png">
+                        <img v-else src="/avatar_none.png">
                     </div>
                     <button v-if="isEditing" class="change-photo-link" @click="showAvatarModal = true">
                         Сменить фото
