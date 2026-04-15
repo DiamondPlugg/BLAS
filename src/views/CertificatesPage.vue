@@ -39,7 +39,7 @@
                 </section>
 
                 <section class="image-container">
-                    <img src="/sertificate_1.png" alt="Подарочный сертификат" />
+                    <img src="sertificate_1.png" alt="Подарочный сертификат" />
                 </section>
             </main>
         </div>

@@ -109,12 +109,12 @@ onUnmounted(function () {
 
         <div class="header-actions">
           <router-link v-if="currentUser && currentUser.role === 'admin'" :to="{ name: 'admin' }" class="admin-gear">
-            <img src="/setting.png" alt="Admin" class="icon-img">
+            <img src="./assets/setting.png" alt="Admin" class="icon-img">
           </router-link>
 
           <div v-if="currentUser" class="user-profile" @click="router.push('/account')">
             <div class="user-icon">
-              <img src="/user.png" alt="User Profile">
+              <img src="./assets/user.png" alt="User Profile">
             </div>
           </div>
           <button v-else class="btn-login" @click="openAuth">Войти</button>

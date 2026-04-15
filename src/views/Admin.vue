@@ -148,10 +148,10 @@ watch(() => form.value.mainImage, () => delete errors.value.mainImage);
                             <td>{{ hall.price }}Р/час</td>
                             <td class="action-btns">
                                 <button @click="confirmDelete(hall.id)" class="btn-del">
-                                    <img src="/delete.png" alt="Удалить">
+                                    <img src="delete.png" alt="Удалить">
                                 </button>
                                 <button @click="openEdit(hall)" class="btn-edit-gear">
-                                    <img src="/setting.png" alt="Редактировать">
+                                    <img src="setting.png" alt="Редактировать">
                                 </button>
                             </td>
                         </tr>

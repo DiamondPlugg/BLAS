@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="image">
-                    <img src="/about_1.jpg" alt="about" />
+                    <img src="about_1.jpg" alt="about" />
                     <span class="note">*Текст написан с помощью ИИ.</span>
                 </div>
             </div>
