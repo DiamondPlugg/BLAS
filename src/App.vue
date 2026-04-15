@@ -77,11 +77,11 @@ function scrollToHalls() {
     }, 100);
   };
 
-  if (route.path !== '/') {
-    router.push('/').then(scrollAction);
-  } else {
-    scrollAction();
-  }
+  // if (route.path !== '/') {
+  //   router.push('/').then(scrollAction);
+  // } else {
+  //   scrollAction();
+  // }
 }
 
 onMounted(function () {
